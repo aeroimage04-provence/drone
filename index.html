@@ -8,88 +8,111 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#accueil" aria-label="AeroImage 04, accueil">AEROIMAGE <b>04</b></a>
+  <header class="topbar shell">
+    <a class="brand" href="#accueil" aria-label="AeroImage 04, accueil"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span>AEROIMAGE <b>04</b></a>
     <nav aria-label="Navigation principale">
-      <a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#galerie">Galerie</a><a href="#projet">Votre projet</a>
     </nav>
+    <a class="header-contact" href="#contact">Parlons de votre projet <span>↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="accueil">
-      <div class="hero-copy topo">
-        <div class="copy-inner">
-          <p class="eyebrow">Imagerie aérienne professionnelle</p>
-          <h1>La Provence<br>vue du ciel</h1>
-          <span class="rule" aria-hidden="true"></span>
-          <p class="lead">Films et prises de vue par drone pour l’immobilier, les mariages, l’événementiel et le suivi de chantier.</p>
-          <div class="actions">
-            <a class="button primary" href="#contact">Demander un devis <span>→</span></a>
-            <a class="button outline" href="#galerie">Voir nos réalisations <span>→</span></a>
-          </div>
-          <p class="trust">◎ Télépilote professionnel <i></i> Alpes-de-Haute-Provence</p>
+      <img class="hero-image" src="images/hero-aerial.jpg" alt="Vue aérienne d’une propriété provençale, de sa piscine et du paysage alentour">
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-content shell">
+        <p class="eyebrow light"><span></span> Imagerie aérienne en Provence</p>
+        <h1>Voir plus haut.<br><em>Ressentir plus fort.</em></h1>
+        <p class="lead">Films et prises de vue par drone pour révéler vos lieux, raconter vos événements et suivre vos projets sous un nouvel angle.</p>
+        <div class="actions">
+          <a class="button white" href="#galerie">Découvrir nos images <span>↓</span></a>
+          <a class="text-link" href="#contact">Demander un devis <span>→</span></a>
         </div>
-        <div class="coordinates">43.9352° N&nbsp;&nbsp; + &nbsp;&nbsp;6.0679° E</div>
       </div>
-      <figure class="hero-photo">
-        <img src="images/hero-aerial.jpg" alt="Vue aérienne d’une propriété provençale et d’un chantier">
-        <figcaption>Alpes-de-Haute-Provence · 01</figcaption>
-      </figure>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="section-head">
-        <div><p class="eyebrow">Nos expertises</p><h2>Une vision précise.<br>Un impact immédiat.</h2></div>
-        <p>De la captation au montage, AeroImage 04 transforme chaque vol en images utiles, mémorables et adaptées à votre projet.</p>
-      </div>
-      <div class="service-grid">
-        <article><span>01</span><h3>Immobilier</h3><p>Des images qui révèlent les volumes, l’environnement et le caractère unique de chaque bien.</p><small>MAISONS · DOMAINES · HÔTELS</small></article>
-        <article><span>02</span><h3>Mariage & événementiel</h3><p>Des plans spectaculaires et naturels pour raconter vos moments forts avec émotion.</p><small>MARIAGES · FESTIVALS · SPORT</small></article>
-        <article><span>03</span><h3>Suivi de chantier</h3><p>Un suivi visuel régulier et précis pour documenter l’avancement de vos projets.</p><small>BTP · PROMOTION · COLLECTIVITÉS</small></article>
-        <article><span>04</span><h3>Inspection technique</h3><p>Toitures, panneaux solaires et ouvrages observés en sécurité et dans le détail.</p><small>THERMIQUE · TOITURE · OUVRAGES</small></article>
+      <div class="hero-footer shell">
+        <p><strong>Télépilote professionnel</strong><span>Alpes-de-Haute-Provence</span></p>
+        <p class="coordinates">43.9352° N <i></i> 6.0679° E</p>
+        <a href="#services">Défiler <b>↓</b></a>
       </div>
     </section>
 
-    <section class="section gallery" id="galerie">
-      <div class="section-head light">
-        <div><p class="eyebrow">Réalisations</p><h2>Des images qui<br>prennent de la hauteur.</h2></div>
-        <p>Du récit émotionnel au relevé technique, chaque projet reçoit une approche visuelle adaptée.</p>
-      </div>
-      <div class="gallery-grid">
-        <figure class="large"><img src="images/hero-aerial.jpg" alt="Photographie aérienne immobilière"><figcaption><small>MISE EN VALEUR</small><b>Immobilier & architecture</b></figcaption></figure>
-        <figure><img src="images/gallery-wedding.jpg" alt="Mariage photographié par drone"><figcaption><small>ÉVÉNEMENTIEL</small><b>Mariage en Provence</b></figcaption></figure>
-        <figure><img src="images/gallery-thermal-roof.jpg" alt="Inspection thermique d’une toiture solaire"><figcaption><small>IMAGERIE TECHNIQUE</small><b>Inspection de toiture</b></figcaption></figure>
+    <section class="intro shell section" aria-labelledby="intro-title">
+      <div class="intro-kicker"><span>NOTRE REGARD</span><i></i></div>
+      <div>
+        <h2 id="intro-title">La Provence comme<br>vous ne l’avez <em>jamais vue.</em></h2>
+        <div class="intro-detail">
+          <p>De la captation au montage, AeroImage 04 transforme chaque vol en images utiles, mémorables et adaptées à votre projet.</p>
+          <a class="round-link" href="#services" aria-label="Découvrir les expertises">↘</a>
+        </div>
       </div>
     </section>
 
-    <section class="section process">
-      <div><p class="eyebrow">Votre projet</p><h2>Simple, cadré,<br>sans surprise.</h2></div>
-      <ol>
-        <li><span>01</span><div><h3>Échange</h3><p>Votre besoin, le lieu et l’objectif de diffusion.</p></div></li>
-        <li><span>02</span><div><h3>Préparation</h3><p>Repérage, météo, sécurité et autorisations de vol.</p></div></li>
-        <li><span>03</span><div><h3>Captation</h3><p>Prises de vue fluides, précises et adaptées au terrain.</p></div></li>
-        <li><span>04</span><div><h3>Livraison</h3><p>Images optimisées pour le web, les réseaux ou vos équipes.</p></div></li>
-      </ol>
+    <section class="services section" id="services">
+      <div class="shell">
+        <div class="section-head dark-head">
+          <div><p class="eyebrow light"><span></span> Nos expertises</p><h2>Un regard unique.<br><em>Quatre savoir-faire.</em></h2></div>
+          <p>Des images spectaculaires quand il le faut, précises quand c’est essentiel — toujours pensées pour votre objectif.</p>
+        </div>
+        <div class="service-grid">
+          <article><span>01</span><h3>Immobilier</h3><p>Des images qui révèlent les volumes, l’environnement et le caractère unique de chaque bien.</p><small>MAISONS · DOMAINES · HÔTELS</small></article>
+          <article><span>02</span><h3>Mariage & événementiel</h3><p>Des plans spectaculaires et naturels pour raconter vos moments forts avec émotion.</p><small>MARIAGES · FESTIVALS · SPORT</small></article>
+          <article><span>03</span><h3>Suivi de chantier</h3><p>Un suivi visuel régulier et précis pour documenter l’avancement de vos projets.</p><small>BTP · PROMOTION · COLLECTIVITÉS</small></article>
+          <article><span>04</span><h3>Inspection technique</h3><p>Toitures, panneaux solaires et ouvrages observés en sécurité et dans le détail.</p><small>THERMIQUE · TOITURE · OUVRAGES</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="galerie">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow"><span></span> Portfolio</p><h2>Prendre de la hauteur.<br><em>Changer de perspective.</em></h2></div>
+          <p>Une sélection d’univers, du récit émotionnel au relevé technique, captés au cœur de la Provence.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="large"><img src="images/hero-aerial.jpg" alt="Photographie aérienne immobilière"><figcaption><small>MISE EN VALEUR</small><b>Immobilier & architecture</b></figcaption></figure>
+          <figure><img src="images/gallery-wedding.jpg" alt="Mariage photographié par drone" loading="lazy"><figcaption><small>ÉVÉNEMENTIEL</small><b>Mariage en Provence</b></figcaption></figure>
+          <figure><img src="images/gallery-thermal-roof.jpg" alt="Inspection thermique d’une toiture solaire" loading="lazy"><figcaption><small>IMAGERIE TECHNIQUE</small><b>Inspection de toiture</b></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="projet">
+      <div class="shell process-layout">
+        <div class="process-intro"><p class="eyebrow"><span></span> Votre projet</p><h2>Simple, fluide,<br><em>sans surprise.</em></h2><p>Vous gardez la vision. Nous prenons en charge chaque étape du vol à la livraison.</p></div>
+        <ol>
+          <li><span>01</span><div><h3>Échange</h3><p>Votre besoin, le lieu et l’objectif de diffusion.</p></div><b>→</b></li>
+          <li><span>02</span><div><h3>Préparation</h3><p>Repérage, météo, sécurité et autorisations de vol.</p></div><b>→</b></li>
+          <li><span>03</span><div><h3>Captation</h3><p>Prises de vue fluides, précises et adaptées au terrain.</p></div><b>→</b></li>
+          <li><span>04</span><div><h3>Livraison</h3><p>Images optimisées pour le web, les réseaux ou vos équipes.</p></div><b>→</b></li>
+        </ol>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="contact-copy">
-        <p class="eyebrow">Parlons de votre projet</p>
-        <h2>Une idée en tête ?<br>Prenons de la hauteur.</h2>
-        <p>Décrivez votre projet et recevez une proposition adaptée à votre besoin, votre lieu et votre calendrier.</p>
-        <a class="phone" href="tel:+33783050963">07 83 05 09 63</a>
-        <small>Intervention dans les Alpes-de-Haute-Provence<br>Facebook · AeroImage04</small>
+      <div class="contact-image" aria-hidden="true"><img src="images/gallery-wedding.jpg" alt="" loading="lazy"></div>
+      <div class="contact-panel">
+        <div class="contact-content">
+          <p class="eyebrow light"><span></span> Parlons de votre projet</p>
+          <h2>Une idée en tête ?<br><em>Prenons de la hauteur.</em></h2>
+          <p>Décrivez votre projet et recevez une proposition adaptée à votre besoin, votre lieu et votre calendrier.</p>
+          <a class="phone" href="tel:+33783050963">07 83 05 09 63</a>
+          <form id="contact-form">
+            <div class="form-row"><label>Votre nom<input name="name" placeholder="Nom et prénom" required></label><label>Votre e-mail<input name="email" type="email" placeholder="vous@exemple.fr" required></label></div>
+            <label>Type de prestation<select name="service" required><option value="">Choisir une prestation</option><option>Immobilier</option><option>Mariage & événementiel</option><option>Suivi de chantier</option><option>Inspection technique</option><option>Autre projet</option></select></label>
+            <label>Votre projet<textarea name="message" rows="3" placeholder="Lieu, date souhaitée, type d’images…" required></textarea></label>
+            <button class="button white" type="submit">Envoyer ma demande <span>→</span></button>
+          </form>
+        </div>
       </div>
-      <form id="contact-form">
-        <div class="form-row"><label>Votre nom<input name="name" placeholder="Nom et prénom" required></label><label>Votre e-mail<input name="email" type="email" placeholder="vous@exemple.fr" required></label></div>
-        <label>Type de prestation<select name="service" required><option value="">Choisir une prestation</option><option>Immobilier</option><option>Mariage & événementiel</option><option>Suivi de chantier</option><option>Inspection technique</option><option>Autre projet</option></select></label>
-        <label>Parlez-nous de votre projet<textarea name="message" rows="5" placeholder="Lieu, date souhaitée, type d’images…" required></textarea></label>
-        <div class="form-bottom"><span>Réponse rapide · Devis personnalisé</span><button class="button dark" type="submit">Envoyer ma demande <span>→</span></button></div>
-      </form>
     </section>
   </main>
 
-  <footer><a class="brand" href="#accueil">AEROIMAGE <b>04</b></a><p>Films & prises de vue par drone · Alpes-de-Haute-Provence</p><a href="#accueil">Retour en haut ↑</a></footer>
+  <footer class="shell">
+    <a class="brand" href="#accueil"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span>AEROIMAGE <b>04</b></a>
+    <p>Films & prises de vue par drone<br>Alpes-de-Haute-Provence</p>
+    <div><a href="tel:+33783050963">07 83 05 09 63</a><a href="mailto:aeroimage04@gmail.com">aeroimage04@gmail.com</a></div>
+    <a href="#accueil">Retour en haut ↑</a>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
