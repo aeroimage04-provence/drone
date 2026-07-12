@@ -56,9 +56,9 @@
         <p>Du récit émotionnel au relevé technique, chaque projet reçoit une approche visuelle adaptée.</p>
       </div>
       <div class="gallery-grid">
-        <figure class="large"><img src="images/hero-aerial.jpg" alt="Photographie aérienne immobilière"><figcaption><small>MISE EN VALEUR</small><b>Immobilier & architecture</b></figcaption></figure>
-        <figure><img src="images/gallery-wedding.jpg" alt="Mariage photographié par drone"><figcaption><small>ÉVÉNEMENTIEL</small><b>Mariage en Provence</b></figcaption></figure>
-        <figure><img src="images/gallery-thermal-roof.jpg" alt="Inspection thermique d’une toiture solaire"><figcaption><small>IMAGERIE TECHNIQUE</small><b>Inspection de toiture</b></figcaption></figure>
+        <figure class="large"><button class="gallery-item" type="button" aria-label="Agrandir : Immobilier et architecture"><img src="images/hero-aerial.jpg" alt="Photographie aérienne immobilière" loading="lazy" decoding="async"><span class="gallery-caption"><small>MISE EN VALEUR</small><b>Immobilier & architecture</b></span></button></figure>
+        <figure><button class="gallery-item" type="button" aria-label="Agrandir : Mariage en Provence"><img src="images/gallery-wedding.jpg" alt="Mariage photographié par drone" loading="lazy" decoding="async"><span class="gallery-caption"><small>ÉVÉNEMENTIEL</small><b>Mariage en Provence</b></span></button></figure>
+        <figure><button class="gallery-item" type="button" aria-label="Agrandir : Inspection de toiture"><img src="images/gallery-thermal-roof.jpg" alt="Inspection thermique d’une toiture solaire" loading="lazy" decoding="async"><span class="gallery-caption"><small>IMAGERIE TECHNIQUE</small><b>Inspection de toiture</b></span></button></figure>
       </div>
     </section>
 
@@ -88,6 +88,10 @@
       </form>
     </section>
   </main>
+
+  <dialog class="lightbox" id="gallery-lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-inner"><button class="lightbox-close" type="button" aria-label="Fermer la visionneuse">×</button><button class="lightbox-nav previous" type="button" aria-label="Voir l’image précédente">‹</button><figure><img class="lightbox-image" src="images/hero-aerial.jpg" alt=""><figcaption id="lightbox-caption" aria-live="polite"></figcaption></figure><button class="lightbox-nav next" type="button" aria-label="Voir l’image suivante">›</button></div>
+  </dialog>
 
   <footer><a class="brand" href="#accueil">AEROIMAGE <b>04</b></a><p>Films & prises de vue par drone · Alpes-de-Haute-Provence</p><a href="#accueil">Retour en haut ↑</a></footer>
   <script src="script.js"></script>
